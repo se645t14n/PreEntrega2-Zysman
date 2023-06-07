@@ -24,10 +24,11 @@ h2{
     padding: 30px 0 30px 30px;
 }
 p {
-    font-family: 'Montserrat';
+    font-family: 'Lexend';
 }
 li {
     display: inline;
+    font-family: 'Lexend';
 }
 div img {
     display: inline-block;

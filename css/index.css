@@ -1,0 +1,39 @@
+header {
+    background-color: black;
+    color: white;
+}
+@font-face {
+    font-family: "varna-bold";
+    src: url("../fonts/Varna-Bold.otf");
+}
+@font-face {
+    font-family: "varna-regular";
+    src: url("../fonts/Varna-Regular.otf");
+}
+a {
+    color: orange;
+}
+h1 {
+    font-family: "varna-bold";
+    padding: 30px 0 0 30px;
+}
+h2{
+    background-color: black;
+    color: white;
+    font-family: "varna-regular";
+    padding: 30px 0 30px 30px;
+}
+p {
+    font-family: 'Montserrat';
+}
+li {
+    display: inline;
+}
+div img {
+    display: inline-block;
+    width: 40%;
+}
+footer {
+    background-color: black;
+    color: white;
+}

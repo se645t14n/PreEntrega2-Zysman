@@ -30,10 +30,35 @@ li {
     display: inline;
     font-family: 'Lexend';
 }
-div img {
-    display: inline-block;
-    width: 40%;
+
+.img-grid {
+    display: grid;
+    grid-template-areas: 
+    "mundial mundial casa casa casa"
+    "cubos cubos cubos perro perro";    
 }
+
+.img-1 {
+    grid-area: mundial;
+}
+
+.img-2 {
+    grid-area: casa;
+}
+
+.img-3 {
+    grid-area: cubos;
+}
+.img-4 {
+    grid-area: perro;
+}
+
+.img-grid img {
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+}
+
 footer {
     background-color: black;
     color: white;

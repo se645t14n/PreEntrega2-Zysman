@@ -1,7 +1,8 @@
-header {
-    background-color: black;
-    color: white;
+* {
+    margin: 0;
 }
+/*fuentes*/
+
 @font-face {
     font-family: "varna-bold";
     src: url("../fonts/Varna-Bold.otf");
@@ -10,32 +11,114 @@ header {
     font-family: "varna-regular";
     src: url("../fonts/Varna-Regular.otf");
 }
+
+/*estilos visuales*/
+
+body {
+    width: 90%;
+    margin: auto;
+    background-color: rgb(26, 24, 24);
+}
+
+main {
+    width: 80%;
+    margin: auto;
+}
+
+header {
+    color: white;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin: 2rem 0 3rem 0;
+}
+
+.intro {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+}
+
+.texto h2 {
+    font-size: 2rem;
+}
+
+.texto p {
+    width: 70%;
+    text-align: justify;
+    color: white;
+    padding-top: 1rem;
+}
+
+.logo {
+    width: 60%;
+}
+
 a {
     color: orange;
 }
 h1 {
     font-family: "varna-bold";
-    padding: 30px 0 0 30px;
 }
 h2{
-    background-color: black;
     color: white;
     font-family: "varna-regular";
-    padding: 30px 0 30px 30px;
 }
 p {
     font-family: 'Lexend';
 }
+
+ul {
+    list-style-type: none;
+    display: flex;
+    flex-flow: row wrap;
+}
+
 li {
-    display: inline;
     font-family: 'Lexend';
+    margin-right: 0.5rem;
+}
+
+footer {
+    color: white;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 1rem;
+}
+
+/*Grids*/
+body {
+    display: grid;
+    grid-template-areas: 
+    "header"
+    "main"
+    "footer";
+    grid-template-rows: 20% auto 15%;
+    grid-template-columns: 1fr;
+
+}
+
+header {
+    grid-area: header;
+}
+
+main {
+    grid-area: main;
+}
+
+footer {
+    grid-area: footer;
 }
 
 .img-grid {
     display: grid;
     grid-template-areas: 
     "mundial mundial casa casa casa"
-    "cubos cubos cubos perro perro";    
+    "cubos cubos cubos perro perro";
+    column-gap: 1rem;
+    row-gap: 1rem;
+    margin: 3rem 0 2rem 0;
 }
 
 .img-1 {
@@ -57,9 +140,4 @@ li {
     object-fit: cover;
     width: 100%;
     height: 100%;
-}
-
-footer {
-    background-color: black;
-    color: white;
 }

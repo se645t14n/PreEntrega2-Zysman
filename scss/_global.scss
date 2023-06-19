@@ -1,0 +1,47 @@
+body {
+    background-color: $bg-color;
+
+    header {
+        color: white;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        padding: $gap-2 100px;
+        border-bottom: 1px solid white;
+        
+        h1 {
+            font-size: $title;
+            font-family: "varna-bold";
+        }
+
+        ul {
+            list-style-type: none;
+            display: flex;
+            flex-flow: row-wrap;
+            justify-content: flex-end;
+
+            li {
+                font-family: $body;
+                margin-left: $gap-2;
+                font-size: 18pt;
+            }
+
+            .first-item {
+                margin-right: 0;
+            }
+        }
+    }
+    
+    main {
+        h2 {
+            font-size: $subtitle;
+            color: white;
+            font-family: "varna-regular";
+        }
+        
+        p {
+            font-family: $body;
+        }
+    }
+}

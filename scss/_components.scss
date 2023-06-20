@@ -1,0 +1,30 @@
+.blogpost {
+    display: flex;
+    flex-direction: column;
+    gap: $gap-1;
+
+    h3 {
+        font-size: 40pt;
+    }
+
+    p {
+        font-size: 18pt;
+        text-align: justify;
+    }
+}
+
+.intereses {
+    display: flex;
+    flex-direction: column;
+    gap: $gap-1;
+
+    h3 {
+        font-size: 24pt;
+
+    }
+
+    p {
+        font-size: 15pt;
+        text-align: justify;
+    }
+}

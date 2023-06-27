@@ -1,0 +1,311 @@
+@font-face {
+  font-family: "varna-bold";
+  src: url("../fonts/Varna-Bold.otf");
+}
+@font-face {
+  font-family: "varna-regular";
+  src: url("../fonts/Varna-Regular.otf");
+}
+* {
+  margin: 0;
+}
+
+body {
+  background-color: #1a1818;
+}
+body header {
+  color: white;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 16px 100px;
+  border-bottom: 1px solid white;
+  background-image: linear-gradient(to bottom, black, rgba(255, 255, 255, 0));
+}
+body header h1 {
+  font-size: 36pt;
+  font-family: "varna-bold";
+}
+body header ul {
+  list-style-type: none;
+  display: flex;
+  flex-flow: row-wrap;
+  justify-content: flex-end;
+}
+body header ul li {
+  font-family: "lexend";
+  margin-left: 16px;
+  font-size: 14pt;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.5019607843);
+}
+body header ul li:hover {
+  border-bottom: none;
+}
+body header ul li:focus {
+  border-bottom: none;
+}
+body header ul li a {
+  text-decoration: none;
+  color: rgba(255, 255, 255, 0.5019607843);
+  padding: 0 4px;
+}
+body header ul li a:hover {
+  color: black;
+  background-color: white;
+}
+body header ul li a:focus {
+  color: black;
+  background-color: white;
+}
+body header ul .first-item {
+  margin: 0;
+}
+body header ul .active {
+  border-bottom: 1px solid white;
+}
+body header ul .active a {
+  color: white;
+}
+body main {
+  padding: 24px 200px;
+}
+body main h2 {
+  font-size: 32pt;
+  color: white;
+  font-family: "varna-regular";
+}
+body main h3 {
+  font-size: 32pt;
+  font-weight: 600;
+}
+body main p {
+  font-family: "lexend";
+  font-weight: 300;
+  font-size: 12pt;
+  text-align: justify;
+  color: white;
+}
+body main .index-intro {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 40px;
+}
+body main .index-intro .texto {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+body footer {
+  color: white;
+  display: flex;
+  justify-content: center;
+  border-top: 1px solid white;
+  padding: 16px 100px;
+  background-image: linear-gradient(to top, black, rgba(255, 255, 255, 0));
+}
+body footer ul {
+  list-style-type: none;
+  display: flex;
+  flex-flow: row-wrap;
+  justify-content: flex-end;
+}
+body footer ul li {
+  font-family: "lexend";
+  margin-left: 16px;
+  font-size: 14pt;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.5019607843);
+}
+body footer ul li:hover {
+  border-bottom: none;
+}
+body footer ul li:focus {
+  border-bottom: none;
+}
+body footer ul li a {
+  text-decoration: none;
+  color: rgba(255, 255, 255, 0.5019607843);
+}
+body footer ul li a:hover {
+  color: black;
+  background-color: white;
+}
+body footer ul li a:focus {
+  color: black;
+  background-color: white;
+}
+body footer ul .first-item {
+  margin-right: 0;
+}
+body footer ul .active {
+  border-bottom: 1px solid white;
+}
+body footer ul .active a {
+  color: white;
+}
+
+body {
+  display: grid;
+  grid-template-areas: "header" "main" "footer";
+  grid-template-rows: 20% auto 15%;
+  grid-template-columns: 1fr;
+}
+body header {
+  grid-area: header;
+}
+body main {
+  grid-area: main;
+}
+body footer {
+  grid-area: footer;
+}
+
+.index--img-grid {
+  display: grid;
+  grid-template-areas: "mundial mundial casa casa casa" "cubos cubos cubos perro perro";
+  column-gap: 1rem;
+  row-gap: 1rem;
+  margin: 3rem 0 2rem 0;
+}
+.index--img-grid img {
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+}
+.index--img-grid .img-1 {
+  grid-area: mundial;
+}
+.index--img-grid .img-2 {
+  grid-area: casa;
+}
+.index--img-grid .img-3 {
+  grid-area: cubos;
+}
+.index--img-grid .img-4 {
+  grid-area: perro;
+}
+
+.galetia--img-grid {
+  display: grid;
+  grid-template-areas: "dibujo pintura" "timelapse timelapse";
+  row-gap: 1rem;
+  column-gap: 1rem;
+  margin-top: 2rem;
+}
+.galetia--img-grid .dibujo {
+  grid-area: dibujo;
+}
+.galetia--img-grid .pintura {
+  grid-area: pintura;
+}
+.galetia--img-grid .timelapse {
+  grid-area: timelapse;
+}
+
+.blogpost {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+.blogpost h3 {
+  font-size: 40pt;
+}
+.blogpost p {
+  font-size: 18pt;
+  text-align: justify;
+}
+
+.intereses {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+.intereses h3 {
+  font-size: 24pt;
+}
+.intereses p {
+  font-size: 15pt;
+  text-align: justify;
+}
+
+@media (max-width: 480px) {
+  header {
+    flex-direction: column;
+    gap: 0.6rem;
+    margin: 1rem 0 1.5rem 0 h1;
+    margin-font-size: 1.2rem;
+  }
+  header nav {
+    width: 100%;
+  }
+  header nav ul {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-flow: nowrap;
+    justify-content: space-between;
+    align-items: center;
+  }
+  header nav ul li {
+    font-size: 0.8rem;
+  }
+  main .intro {
+    gap: 16px;
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+  }
+  main .intro .texto {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  main .intro .texto h2 {
+    font-size: 26pt;
+  }
+  main .intro .texto p {
+    font-size: 8pt;
+  }
+  main .intro .logo {
+    max-width: 180px;
+  }
+  main .img-grid {
+    display: flex;
+    flex-direction: column;
+    margin: 1rem 0 1rem 0;
+  }
+  main .img-grid img {
+    max-width: 100%;
+  }
+  main footer {
+    display: none;
+  }
+}
+@media (max-width: 768px) {
+  header ul {
+    font-size: 0.8rem;
+  }
+  main h1 {
+    font-size: 30pt;
+  }
+  main .intro {
+    align-items: center;
+    gap: 1.4rem;
+  }
+  main .texto h2 {
+    font-size: 28pt;
+  }
+  main .texto p {
+    font-size: 10pt;
+    width: 100%;
+  }
+  main .logo {
+    max-width: 210px;
+  }
+  footer {
+    margin: 1rem 0 1rem 0;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */

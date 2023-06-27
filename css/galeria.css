@@ -90,7 +90,7 @@ footer {
 
 /*grid*/
 
-.img--grid {
+.galetia--img-grid {
     display: grid;
     grid-template-areas:
     "dibujo pintura"

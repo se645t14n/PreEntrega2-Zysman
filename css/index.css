@@ -98,7 +98,6 @@ body {
     "footer";
     grid-template-rows: 20% auto 15%;
     grid-template-columns: 1fr;
-
 }
 
 header {
@@ -113,7 +112,7 @@ footer {
     grid-area: footer;
 }
 
-.img-grid {
+.index--img-grid {
     display: grid;
     grid-template-areas: 
     "mundial mundial casa casa casa"

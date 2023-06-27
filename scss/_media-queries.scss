@@ -1,0 +1,111 @@
+// mobile viewport
+@media (max-width: 480px) {
+    header {
+        flex-direction: column;
+        gap: 0.6rem;
+        margin: 1rem 0 1.5rem 0
+
+        h1 {
+            font-size: 1.2rem;
+        }
+
+        nav {
+            width: 100%;
+
+            ul {
+                margin: 0;
+                padding: 0;
+                display: flex;
+                flex-flow: nowrap;
+                justify-content: space-between;
+                align-items: center;
+
+                li {
+                    font-size: 0.8rem;
+                }
+            }
+        }
+
+    }
+
+    main {
+        
+        .intro {
+            gap: $gap-2;
+            display: flex;
+            flex-direction: column-reverse;
+            align-items: center;
+            
+            .texto {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+    
+                h2 {
+                    font-size: $mobile-subtitle;
+                }
+    
+                p {
+                    font-size: $mobile-body;
+                }
+            }
+
+            .logo {
+                max-width: 180px;
+            }
+        }
+
+        .img-grid {
+            display: flex;
+            flex-direction: column;
+            margin: 1rem 0 1rem 0;
+
+            img {
+                max-width: 100%;
+            }
+        }
+
+        footer {
+            display: none;
+        }
+    }
+}
+
+// tablet viewport
+@media (max-width: 768px) {
+    header {
+        ul {
+            font-size: 0.8rem;
+        }
+    }
+
+    main {
+        h1 {
+            font-size: $tablet-title;
+        }
+
+        .intro {
+            align-items: center;
+            gap: 1.4rem;
+        }
+
+        .texto {
+            h2 {
+                font-size: $tablet-subtitle;
+            }
+
+            p {
+                font-size: $tablet-body;
+                width: 100%;
+            }
+        }
+
+        .logo {
+            max-width: 210px;
+        }
+    }
+
+    footer{
+        margin: 1rem 0 1rem 0;
+    }
+}

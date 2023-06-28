@@ -36,23 +36,15 @@ body {
 
     .img-1 {
         grid-area: mundial;
-        transition: all 200ms;
-        @include img-scale;
     }
     .img-2 {
         grid-area: casa;
-        transition: all 200ms;
-        @include img-scale;
     }
     .img-3 {
         grid-area: cubos;
-        transition: all 200ms;
-        @include img-scale;
     }
     .img-4 {
         grid-area: perro;
-        transition: all 200ms;
-        @include img-scale;
     }
 }
 //galeria-imagenes
@@ -82,8 +74,5 @@ body {
 
     img {
         @include img-fit;
-        transition: all 200ms;
-        @include img-scale;
-    
     }
 }

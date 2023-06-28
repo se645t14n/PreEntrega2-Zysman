@@ -1,3 +1,63 @@
+//hover
+@media (hover) {
+    ul {
+        
+        li {
+            &:hover {
+                border-bottom: none;
+            }
+            &:focus {
+                border-bottom: none;
+            }
+    
+            a {
+                &:hover {
+                    @include nav-hover;
+                }
+                &:focus {
+                    @include nav-hover;
+                }
+            }
+        }
+
+        .active {
+            a {
+                &:hover {
+                    @include nav-hover;
+                }   
+            }
+        }
+    }
+
+    .index--img-grid {
+        .img-1 {
+            transition: all 200ms;
+            @include img-scale;
+        }
+
+        .img-2 {
+            transition: all 200ms;
+            @include img-scale;
+        }
+
+        .img-3 {
+            transition: all 200ms;
+            @include img-scale;
+        }
+
+        .img-4 {
+            transition: all 200ms;
+            @include img-scale;
+        }
+    }
+
+    .galeria--img-grid {
+        img {
+            transition: all 200ms;
+        @include img-scale;
+        }    
+    }
+}
 // mobile viewport
 @media (max-width: 480px) {
     header {

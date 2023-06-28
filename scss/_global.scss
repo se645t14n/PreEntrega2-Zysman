@@ -30,26 +30,11 @@ body {
                 margin-left: $gap-2;
                 font-size: $nav;
                 border-bottom: 1px solid #ffffff80;
-
-                &:hover {
-                    border-bottom: none;
-                }
-                &:focus {
-                    border-bottom: none;
-                }
                 
-
                 a {
                     text-decoration: none;
                     color: #ffffff80;
                     padding: 0 4px;
-
-                    &:hover {
-                        @include nav-hover;
-                    }
-                    &:focus {
-                        @include nav-hover;
-                    }
                 }
             }
 
@@ -123,23 +108,11 @@ body {
                 margin-left: $gap-2;
                 font-size: $nav;
                 border-bottom: 1px solid #ffffff80;
-                &:hover {
-                    border-bottom: none;
-                }
-                &:focus {
-                    border-bottom: none;
-                }
 
                 a {
                     text-decoration: none;
                     color: #ffffff80;
                     padding: 0 4px;
-                    &:hover {
-                        @include nav-hover;
-                    }
-                    &:focus {
-                        @include nav-hover;
-                    }
                 }
             }
 

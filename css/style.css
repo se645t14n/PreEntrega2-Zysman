@@ -70,24 +70,10 @@ body header ul li {
   font-size: 14pt;
   border-bottom: 1px solid rgba(255, 255, 255, 0.5019607843);
 }
-body header ul li:hover {
-  border-bottom: none;
-}
-body header ul li:focus {
-  border-bottom: none;
-}
 body header ul li a {
   text-decoration: none;
   color: rgba(255, 255, 255, 0.5019607843);
   padding: 0 4px;
-}
-body header ul li a:hover {
-  color: black;
-  background-color: white;
-}
-body header ul li a:focus {
-  color: black;
-  background-color: white;
 }
 body header ul .first-item {
   margin: 0;
@@ -149,24 +135,10 @@ body footer ul li {
   font-size: 14pt;
   border-bottom: 1px solid rgba(255, 255, 255, 0.5019607843);
 }
-body footer ul li:hover {
-  border-bottom: none;
-}
-body footer ul li:focus {
-  border-bottom: none;
-}
 body footer ul li a {
   text-decoration: none;
   color: rgba(255, 255, 255, 0.5019607843);
   padding: 0 4px;
-}
-body footer ul li a:hover {
-  color: black;
-  background-color: white;
-}
-body footer ul li a:focus {
-  color: black;
-  background-color: white;
 }
 body footer ul .first-item {
   margin-right: 0;
@@ -209,31 +181,15 @@ body footer {
 }
 .index--img-grid .img-1 {
   grid-area: mundial;
-  transition: all 200ms;
-}
-.index--img-grid .img-1:hover {
-  transform: scale(0.98, 0.98);
 }
 .index--img-grid .img-2 {
   grid-area: casa;
-  transition: all 200ms;
-}
-.index--img-grid .img-2:hover {
-  transform: scale(0.98, 0.98);
 }
 .index--img-grid .img-3 {
   grid-area: cubos;
-  transition: all 200ms;
-}
-.index--img-grid .img-3:hover {
-  transform: scale(0.98, 0.98);
 }
 .index--img-grid .img-4 {
   grid-area: perro;
-  transition: all 200ms;
-}
-.index--img-grid .img-4:hover {
-  transform: scale(0.98, 0.98);
 }
 
 .galeria--img-grid {
@@ -261,12 +217,58 @@ body footer {
   object-fit: cover;
   width: 100%;
   height: 100%;
-  transition: all 200ms;
-}
-.galeria--img-grid img:hover {
-  transform: scale(0.98, 0.98);
 }
 
+@media (hover) {
+  ul li:hover {
+    border-bottom: none;
+  }
+  ul li:focus {
+    border-bottom: none;
+  }
+  ul li a:hover {
+    color: black;
+    background-color: white;
+  }
+  ul li a:focus {
+    color: black;
+    background-color: white;
+  }
+  ul .active a:hover {
+    color: black;
+    background-color: white;
+  }
+  .index--img-grid .img-1 {
+    transition: all 200ms;
+  }
+  .index--img-grid .img-1:hover {
+    transform: scale(0.98, 0.98);
+  }
+  .index--img-grid .img-2 {
+    transition: all 200ms;
+  }
+  .index--img-grid .img-2:hover {
+    transform: scale(0.98, 0.98);
+  }
+  .index--img-grid .img-3 {
+    transition: all 200ms;
+  }
+  .index--img-grid .img-3:hover {
+    transform: scale(0.98, 0.98);
+  }
+  .index--img-grid .img-4 {
+    transition: all 200ms;
+  }
+  .index--img-grid .img-4:hover {
+    transform: scale(0.98, 0.98);
+  }
+  .galeria--img-grid img {
+    transition: all 200ms;
+  }
+  .galeria--img-grid img:hover {
+    transform: scale(0.98, 0.98);
+  }
+}
 @media (max-width: 480px) {
   header {
     flex-direction: column;

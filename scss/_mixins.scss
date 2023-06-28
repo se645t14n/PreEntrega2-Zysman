@@ -16,3 +16,8 @@
     row-gap: $row;
     column-gap: $column;
 }
+@mixin img-scale {
+    &:hover {
+        transform: scale(0.98, 0.98);
+    }
+}

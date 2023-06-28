@@ -64,6 +64,7 @@ body {
 
                 a {
                     color: white;
+                    text-shadow: 0 0 1px white;
                 }
             }
         }
@@ -71,15 +72,16 @@ body {
     
     main {
         padding: $gap-3 200px;
+        color: white;
 
         h2 {
             font-size: $subtitle;
-            color: white;
             font-family: $subtitle-font;
         }
 
         h3 {
             font-size: $item-title;
+            font-family: $body-font;
             font-weight: 600;
         }
         
@@ -88,7 +90,6 @@ body {
             font-weight: 300;
             font-size: $body;
             text-align: justify;
-            color: white;
         }
 
         .index-intro {
@@ -134,6 +135,7 @@ body {
                 a {
                     text-decoration: none;
                     color: #ffffff80;
+                    padding: 0 4px;
                     &:hover {
                         color: black;
                         background-color: white;
@@ -154,6 +156,7 @@ body {
 
                 a {
                     color: white;
+                    text-shadow: 0 0 1px white;
                 }
             }
         }

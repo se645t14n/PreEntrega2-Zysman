@@ -281,81 +281,92 @@ body footer {
   }
 }
 @media (max-width: 480px) {
-  header {
+  body header {
     flex-direction: column;
-    gap: 0.6rem;
-    margin: 1rem 0 1.5rem 0 h1;
-    margin-font-size: 1.2rem;
+    padding: 24px;
+    gap: 16px;
   }
-  header nav {
+  body header h1 {
+    font-size: 20pt;
+  }
+  body header nav {
     width: 100%;
   }
-  header nav ul {
-    margin: 0;
+  body header nav ul {
     padding: 0;
     display: flex;
     flex-flow: nowrap;
     justify-content: space-between;
     align-items: center;
   }
-  header nav ul li {
-    font-size: 0.8rem;
+  body header nav ul li {
+    font-size: 8pt;
   }
-  main .intro {
+  body main {
+    padding: 16px 24px;
+  }
+  body main .index-intro {
     gap: 16px;
     display: flex;
     flex-direction: column-reverse;
     align-items: center;
   }
-  main .intro .texto {
+  body main .index-intro .texto {
     display: flex;
     flex-direction: column;
     align-items: center;
   }
-  main .intro .texto h2 {
-    font-size: 26pt;
+  body main .index-intro .texto h2 {
+    font-size: 16pt;
   }
-  main .intro .texto p {
+  body main .index-intro .texto p {
     font-size: 8pt;
   }
-  main .intro .logo {
+  body main .index-intro .logo {
     max-width: 180px;
   }
-  main .img-grid {
+  body main .index--img-grid {
     display: flex;
     flex-direction: column;
-    margin: 1rem 0 1rem 0;
   }
-  main .img-grid img {
-    max-width: 100%;
+  body main .index--img-grid img {
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
   }
-  main footer {
+  body footer {
     display: none;
   }
 }
-@media (max-width: 768px) {
-  header ul {
-    font-size: 0.8rem;
+@media (max-width: 810px) {
+  body header {
+    padding: 16px 50px;
   }
-  main h1 {
-    font-size: 30pt;
+  body header h1 {
+    font-size: 20pt;
   }
-  main .intro {
+  body header ul li {
+    font-size: 10pt;
+  }
+  body main {
+    padding: 16px 50px;
+  }
+  body main .index-intro {
     align-items: center;
-    gap: 1.4rem;
+    gap: 16px;
   }
-  main .texto h2 {
+  body main .texto h2 {
     font-size: 28pt;
   }
-  main .texto p {
+  body main .texto p {
     font-size: 10pt;
     width: 100%;
   }
-  main .logo {
+  body main .logo {
     max-width: 210px;
   }
-  footer {
-    margin: 1rem 0 1rem 0;
+  body footer ul li {
+    font-size: 10pt;
   }
 }
 

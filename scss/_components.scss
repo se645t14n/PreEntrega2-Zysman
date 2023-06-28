@@ -1,30 +1,32 @@
 .blogpost {
-    display: flex;
-    flex-direction: column;
+    @include flex-column;
     gap: $gap-1;
 
     h3 {
-        font-size: 40pt;
+        font-size: $item-title;
     }
 
     p {
-        font-size: 18pt;
+        font-size: $body;
         text-align: justify;
+    }
+
+    img {
+        @include img-fit;
     }
 }
 
 .intereses {
-    display: flex;
-    flex-direction: column;
+    @include flex-column;
     gap: $gap-1;
 
     h3 {
-        font-size: 24pt;
+        font-size: $item-title;
 
     }
 
     p {
-        font-size: 15pt;
+        font-size: $body;
         text-align: justify;
     }
 }

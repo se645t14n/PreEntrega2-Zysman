@@ -3,6 +3,9 @@
 }
 body {
     background-color: $bg-color;
+    animation-name: fade-in;
+    animation-duration: 500ms;
+    animation-timing-function: ease-in;
 
     header {
         color: white;

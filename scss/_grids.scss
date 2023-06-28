@@ -47,6 +47,7 @@ body {
         grid-area: perro;
     }
 }
+
 //galeria-imagenes
 .galeria--img-grid {
     display: grid;
@@ -75,4 +76,19 @@ body {
     img {
         @include img-fit;
     }
+}
+
+//blog-articulos
+.blog--img-grid {
+    margin: $gap-4 0;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    @include grid-gaps ($gap-2, $gap-2);
+
+}
+
+//otros proyectos-articulos
+.proyectos--img-grid {
+    margin: $gap-3 0;
 }

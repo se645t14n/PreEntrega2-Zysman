@@ -230,6 +230,19 @@ body footer {
   height: 100%;
 }
 
+.blog--img-grid {
+  margin: 32px 0;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  row-gap: 16px;
+  column-gap: 16px;
+}
+
+.proyectos--img-grid {
+  margin: 24px 0;
+}
+
 @media (hover) {
   ul li:hover {
     border-bottom: none;

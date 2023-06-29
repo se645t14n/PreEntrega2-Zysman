@@ -91,4 +91,8 @@ body {
 //otros proyectos-articulos
 .proyectos--img-grid {
     margin: $gap-3 0;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    @include grid-gaps ($gap-2, $gap-2);
 }

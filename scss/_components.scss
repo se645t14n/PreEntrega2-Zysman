@@ -4,6 +4,7 @@
 
     h3 {
         font-size: $item-title;
+        
     }
 
     p {
@@ -13,12 +14,18 @@
 
     img {
         @include img-fit;
+        height: 272px;
     }
 }
 
 .intereses {
     @include flex-column;
     gap: $gap-1;
+
+    img {
+        @include img-fit;
+        height: 160px;
+    }
 
     h3 {
         font-size: $item-title;

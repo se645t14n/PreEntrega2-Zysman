@@ -90,6 +90,18 @@ body {
                 gap: $gap-1;
             }
         }
+
+        .contacto-ficha {
+            display: flex;
+            gap: 54px;
+            margin-top: $gap-4;
+
+            .cuerpo {
+                @include flex-column;
+                gap: $gap-4;
+            }
+
+        }
     }
 
     footer {

@@ -133,6 +133,16 @@ body main .index-intro .texto {
   flex-direction: column;
   gap: 8px;
 }
+body main .contacto-ficha {
+  display: flex;
+  gap: 54px;
+  margin-top: 32px;
+}
+body main .contacto-ficha .cuerpo {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+}
 body footer {
   color: white;
   display: flex;

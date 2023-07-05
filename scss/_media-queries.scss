@@ -54,8 +54,34 @@
     .galeria--img-grid {
         img {
             transition: all 200ms;
-        @include img-scale;
+            @include img-scale;
         }    
+    }
+
+    .blog--img-grid {
+        img {
+            transition: all 200ms;
+            @include img-scale;
+        }
+
+        h3 {
+            &:hover {
+                text-decoration: underline solid;
+            }
+        }
+    }
+
+    .proyectos--img-grid {
+        img {
+            transition: all 200ms;
+            @include img-scale;
+        }
+
+        h3 {
+            &:hover {
+                text-decoration: underline solid;
+            }
+        }
     }
 }
 // mobile viewport

@@ -83,7 +83,7 @@ body {
     margin: $gap-4 0;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
     @include grid-gaps ($gap-2, $gap-2);
 
 }

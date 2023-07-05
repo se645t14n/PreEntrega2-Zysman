@@ -5,6 +5,9 @@
 }
 .blogpost h3 {
   font-size: 18pt;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 .blogpost p {
   font-size: 12pt;
@@ -251,7 +254,7 @@ body footer {
   margin: 32px 0;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  grid-template-rows: repeat(3, 1fr);
+  grid-template-rows: repeat(2, 1fr);
   row-gap: 16px;
   column-gap: 16px;
 }
@@ -313,6 +316,24 @@ body footer {
   }
   .galeria--img-grid img:hover {
     transform: scale(0.98, 0.98);
+  }
+  .blog--img-grid img {
+    transition: all 200ms;
+  }
+  .blog--img-grid img:hover {
+    transform: scale(0.98, 0.98);
+  }
+  .blog--img-grid h3:hover {
+    text-decoration: underline solid;
+  }
+  .proyectos--img-grid img {
+    transition: all 200ms;
+  }
+  .proyectos--img-grid img:hover {
+    transform: scale(0.98, 0.98);
+  }
+  .proyectos--img-grid h3:hover {
+    text-decoration: underline solid;
   }
 }
 @media (max-width: 480px) {

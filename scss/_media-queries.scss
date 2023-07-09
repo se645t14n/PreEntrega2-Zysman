@@ -83,82 +83,12 @@
             }
         }
     }
-}
-// mobile viewport
-@media (max-width: 480px) {
-    body {
 
-        header {
-            flex-direction: column;
-            padding: 24px;
-            gap: $gap-2;
-    
-    
-            h1 {
-                font-size: $mobile-title;
-            }
-    
-            nav {
-                width: 100%;
-    
-                ul {
-                    padding: 0;
-                    display: flex;
-                    flex-flow: nowrap;
-                    justify-content: space-between;
-                    align-items: center;
-    
-                    li {
-                        font-size: $mobile-body;
-                    }
-                }
-            }
-    
+    .boton {
+        &:hover {
+            color: black;
+            background-color: white;
         }
-    
-        main {
-            padding: $gap-2 24px;
-            
-            .index-intro {
-                gap: $gap-2;
-                display: flex;
-                flex-direction: column-reverse;
-                align-items: center;
-                
-                .texto {
-                    display: flex;
-                    flex-direction: column;
-                    align-items: center;
-        
-                    h2 {
-                        font-size: $mobile-subtitle;
-                    }
-        
-                    p {
-                        font-size: $mobile-body;
-                    }
-                }
-    
-                .logo {
-                    max-width: 180px;
-                }
-            }
-    
-            .index--img-grid {
-                @include flex-column;
-                    
-                img {
-                    @include img-fit;
-                }
-            }
-    
-        }
-
-        footer {
-            display: none;
-        }
-    
-
     }
 }
 
@@ -187,15 +117,13 @@
                 gap: $gap-2;
             }
     
-            .texto {
-                h2 {
-                    font-size: $tablet-subtitle;
-                }
-    
-                p {
-                    font-size: $tablet-body;
-                    width: 100%;
-                }
+            h2 {
+                font-size: $tablet-subtitle;
+            }
+
+            p {
+                font-size: $tablet-body;
+                width: 100%;
             }
     
             .logo {
@@ -212,4 +140,104 @@
         }
     }
 
+}
+
+// mobile viewport
+@media (max-width: 480px) {
+    body {
+        @include flex-column;
+
+        header {
+            flex-direction: column;
+            padding: $gap-2 24px;
+            gap: $gap-2;
+    
+    
+            h1 {
+                font-size: $mobile-title;
+            }
+    
+            nav {
+                width: 100%;
+    
+                ul {
+                    padding: 0;
+                    display: flex;
+                    flex-flow: nowrap;
+                    justify-content: space-between;
+                    align-items: center;
+    
+                    li {
+                        font-size: 8pt;
+                    }
+                }
+            }
+    
+        }
+    
+        main {
+            padding: $gap-2 24px;
+            
+            h2 {
+                font-size: $mobile-subtitle;
+            }
+
+            p {
+                font-size: $mobile-body;
+            }
+
+            .index-intro {
+                gap: $gap-2;
+                display: flex;
+                flex-direction: column-reverse;
+                align-items: center;
+                
+                .texto {
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+        
+                }
+    
+                .logo {
+                    max-width: 180px;
+                }
+            }
+    
+            .index--img-grid {
+                @include flex-column;
+                    
+                img {
+                    @include img-fit;
+                }
+            }
+
+            .blog--img-grid {
+                @include flex-column;
+
+                img {
+                    @include img-fit;
+                }
+            }
+
+            .proyectos--img-grid {
+                @include flex-column;
+
+                img {
+                    @include img-fit;
+                }
+            }
+
+            .contacto-ficha {
+                @include flex-column;
+            }
+    
+        }
+
+        footer {
+            display: none;
+        }
+    
+
+    }
 }

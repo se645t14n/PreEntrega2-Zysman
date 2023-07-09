@@ -94,13 +94,46 @@ body {
         .contacto-ficha {
             display: flex;
             gap: 54px;
-            margin-top: $gap-4;
+            padding: $gap-4 0;
+            
+            .logo {
+                @include img-fit;
+            }
 
             .cuerpo {
                 @include flex-column;
                 gap: $gap-4;
-            }
 
+                .ficha {
+                    @include flex-column;
+                    gap: $gap-1;
+
+                    form {
+                        @include flex-column;
+                        gap: $gap-1;
+
+                        label {
+                            font-family: $body-font;
+                        }
+                    }
+
+                    .campo-mensaje {
+                        @include flex-column;
+                        gap: $gap-1;
+                        textarea {
+                            max-width: 100%px;
+                            
+                        }
+                    }
+                }
+            }
+        }
+
+        .boton {
+            font-family: $body-font;
+            color: white;
+            background-color: $bg-color;
+            border: solid 1px white;
         }
     }
 

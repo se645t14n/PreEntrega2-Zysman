@@ -97,7 +97,8 @@ body {
             padding: $gap-4 0;
             
             .logo {
-                @include img-fit;
+                max-width: 298px;
+                max-height: 298px;
             }
 
             .cuerpo {
@@ -121,7 +122,7 @@ body {
                         @include flex-column;
                         gap: $gap-1;
                         textarea {
-                            max-width: 100%px;
+                            max-width: 614px;
                             
                         }
                     }

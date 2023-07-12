@@ -47,6 +47,14 @@
     opacity: 1;
   }
 }
+@keyframes spin {
+  0% {
+    rotate: 0deg;
+  }
+  100% {
+    rotate: -360deg;
+  }
+}
 @font-face {
   font-family: "varna-bold";
   src: url("../fonts/Varna-Bold.otf");
@@ -144,6 +152,10 @@ body main .contacto-ficha {
 body main .contacto-ficha .logo {
   max-width: 298px;
   max-height: 298px;
+  animation-name: spin;
+  animation-duration: 60s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
 }
 body main .contacto-ficha .cuerpo {
   display: flex;

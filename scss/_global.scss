@@ -99,6 +99,10 @@ body {
             .logo {
                 max-width: 298px;
                 max-height: 298px;
+                animation-name: spin;
+                animation-duration: 60s;
+                animation-timing-function: linear;
+                animation-iteration-count: infinite
             }
 
             .cuerpo {

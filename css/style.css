@@ -493,6 +493,16 @@ body footer {
   body main .contacto-ficha {
     display: flex;
     flex-direction: column;
+    justify-content: center;
+    gap: 16px;
+    padding: 8px;
+  }
+  body main .contacto-ficha .logo {
+    max-width: 180px;
+    margin: auto;
+  }
+  body main .contacto-ficha .cuerpo {
+    gap: 16px;
   }
   body footer {
     display: none;

@@ -230,6 +230,18 @@
 
             .contacto-ficha {
                 @include flex-column;
+                justify-content: center;
+                gap: $gap-2;
+                padding: $gap-1;
+
+                .logo {
+                    max-width: 180px;
+                    margin: auto;
+                }
+
+                .cuerpo {
+                    gap: $gap-2;
+                }
             }
     
         }

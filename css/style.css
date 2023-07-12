@@ -384,6 +384,11 @@ body footer {
   }
 }
 @media (max-width: 810px) {
+  body {
+    height: 100vh;
+    grid-template-rows: 10% auto 5%;
+    grid-template-columns: 1fr;
+  }
   body header {
     padding: 16px 50px;
   }
@@ -431,10 +436,9 @@ body footer {
     width: 100%;
   }
   body header nav ul {
-    padding: 0;
     display: flex;
-    flex-flow: nowrap;
-    justify-content: space-between;
+    flex-flow: wrap;
+    justify-content: space-evenly;
     align-items: center;
   }
   body header nav ul li {

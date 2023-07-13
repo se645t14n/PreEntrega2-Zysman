@@ -133,6 +133,16 @@
             .logo {
                 max-width: 210px;
             }
+
+            .blog--img-grid {
+                grid-template-columns: repeat(2, 1fr);
+                grid-template-rows: auto;
+            }
+
+            .proyectos--img-grid {
+                grid-template-columns: repeat(2, 1fr);
+                grid-template-rows: auto;
+            }
         }
 
         footer {
@@ -165,18 +175,49 @@
                 width: 100%;
     
                 ul {
-                    //padding: 0;
-                    //margin: auto;
-                    //width: 70%;
+                    padding: 0;
+                    margin: auto;
+                    width: 80%;
                     display: flex;
                     flex-flow: wrap;
-                    justify-content: space-evenly;
+                    justify-content: space-around;
                     align-items: center;
-                    //gap: $gap-1;
-                    
+                    gap: $gap-1;
+
+                    /*
+                    display: grid;
+                    grid-template-areas:
+                    "inicio galeria blog"
+                    "contacto proyectos proyectos";
+                    grid-template-rows: repeat (2, 1fr);
+                    grid-template-columns: repeat(3, 1fr);
+                    padding: 0;
+                    @include grid-gaps ($gap-2, $gap-2);
+                    */
     
                     li {
                         font-size: 8pt;
+                        margin: 0;
+
+                        .inicio {
+                            grid-area: inicio;
+                        }
+
+                        .galeria {
+                            grid-area: galeria;
+                        }
+
+                        .blog {
+                            grid-area: blog;
+                        }
+
+                        .contacto {
+                            grid-area: contacto;
+                        }
+
+                        .proyectos {
+                            grid-area: proyectos;
+                        }
                     }
                 }
             }

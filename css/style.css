@@ -415,6 +415,14 @@ body footer {
   body main .logo {
     max-width: 210px;
   }
+  body main .blog--img-grid {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: auto;
+  }
+  body main .proyectos--img-grid {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: auto;
+  }
   body footer ul li {
     font-size: 10pt;
   }
@@ -436,13 +444,43 @@ body footer {
     width: 100%;
   }
   body header nav ul {
+    padding: 0;
+    margin: auto;
+    width: 80%;
     display: flex;
     flex-flow: wrap;
-    justify-content: space-evenly;
+    justify-content: space-around;
     align-items: center;
+    gap: 8px;
+    /*
+    display: grid;
+    grid-template-areas:
+    "inicio galeria blog"
+    "contacto proyectos proyectos";
+    grid-template-rows: repeat (2, 1fr);
+    grid-template-columns: repeat(3, 1fr);
+    padding: 0;
+    @include grid-gaps ($gap-2, $gap-2);
+    */
   }
   body header nav ul li {
     font-size: 8pt;
+    margin: 0;
+  }
+  body header nav ul li .inicio {
+    grid-area: inicio;
+  }
+  body header nav ul li .galeria {
+    grid-area: galeria;
+  }
+  body header nav ul li .blog {
+    grid-area: blog;
+  }
+  body header nav ul li .contacto {
+    grid-area: contacto;
+  }
+  body header nav ul li .proyectos {
+    grid-area: proyectos;
   }
   body main {
     padding: 16px 24px;

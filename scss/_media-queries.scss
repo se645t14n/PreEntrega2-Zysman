@@ -183,18 +183,7 @@
                     justify-content: space-around;
                     align-items: center;
                     gap: $gap-1;
-
-                    /*
-                    display: grid;
-                    grid-template-areas:
-                    "inicio galeria blog"
-                    "contacto proyectos proyectos";
-                    grid-template-rows: repeat (2, 1fr);
-                    grid-template-columns: repeat(3, 1fr);
-                    padding: 0;
-                    @include grid-gaps ($gap-2, $gap-2);
-                    */
-    
+                        
                     li {
                         font-size: 8pt;
                         margin: 0;

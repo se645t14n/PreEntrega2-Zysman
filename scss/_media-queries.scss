@@ -220,11 +220,25 @@
                 }
             }
 
+            .galeria--img-grid {
+                @include flex-column;
+            }
+
             .blog--img-grid {
                 @include flex-column;
 
                 img {
                     @include img-fit;
+                    height: 100px;
+                }
+            }
+
+            .blogpost {
+                h3 {
+                    font-size: $mobile-item-title;
+                }
+                p {
+                    font-size: $mobile-body;
                 }
             }
 
@@ -233,6 +247,16 @@
 
                 img {
                     @include img-fit;
+                    height: 120px;
+                }
+            }
+
+            .intereses {
+                h3 {
+                    font-size: $mobile-item-title;
+                }
+                p {
+                    font-size: $mobile-body;
                 }
             }
 
